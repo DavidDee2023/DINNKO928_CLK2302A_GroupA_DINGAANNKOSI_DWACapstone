@@ -157,7 +157,7 @@ export default function Favourites({
           ariaLabel="blocks-loading"
           wrapperStyle={{}}
           wrapperClass="blocks-wrapper"
-          colors={["#003EAB", "#008033", "#EEF3F6", "#003EAB", "#008033"]}
+          colors={["#003EAB", /**"#008033", "#EEF3F6", "#003EAB", "#008033"**/]}
         />
       </div>
     );
@@ -171,7 +171,7 @@ export default function Favourites({
 
       {session && (
         <p className="text">
-          Here are your favourites, {session.user.user_metadata.full_name}❤️
+          Here are your God's favourites, {session.user.user_metadata.full_name}❤️
         </p>
       )}
       <div className="container">

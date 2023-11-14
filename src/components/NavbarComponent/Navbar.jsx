@@ -55,7 +55,7 @@ export default function Navbar({ handleFavNavigation, handleLoginNavigation }) {
             <Link to="/">
               <img src={SoundLogo} className="podcast--logo" />
             </Link>
-            <p>Podcast Hub</p>
+            <p>GodCast App</p>
           </div>
           {!isMatch && (
             <Tabs
@@ -65,8 +65,8 @@ export default function Navbar({ handleFavNavigation, handleLoginNavigation }) {
               onChange={handleChange}
               sx={{
                 "& button": { borderRadius: 2 },
-                "& button:hover": { backgroundColor: "#008033" },
-                "& button:focus": { backgroundColor: "white" },
+                "& button:hover": { backgroundColor: "brown" },
+                "& button:focus": { backgroundColor: "Beige" },
                 ml: "15rem",
               }}
             >
