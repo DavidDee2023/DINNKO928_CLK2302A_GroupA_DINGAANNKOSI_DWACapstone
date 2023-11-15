@@ -31,6 +31,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background: rgb(118, 117, 117);
     column-gap: 1.5rem;
     row-gap: 1rem;
     width: 100%;
@@ -53,7 +54,7 @@
     margin-top: 2rem;
     width: 5rem;
     height: 2rem;
-    color: white;
+    color: rgb(232, 220, 220);
     background-color: #008033;
     border: none;
 }

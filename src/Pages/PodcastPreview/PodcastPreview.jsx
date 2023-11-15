@@ -235,7 +235,7 @@ export default function PodcastPreview({ handleOpenCard, session }) {
   return (
     <>
     <div className="intro--container">
-      { session ? <h1 className='welcome'>Welcome Back, {session.user.user_metadata.full_name}👋🏽</h1> : <h1 className="welcome">Welcome to Podcast Hub👋🏽</h1>  }
+      { session ? <h1 className='welcome'>Welcome Back, {session.user.user_metadata.full_name}</h1> : <h1 className="welcome">Welcome to the God-Cast App!</h1>  }
       
        {session && <button onClick={handleLogout}>Logout</button> }
     </div>
@@ -243,7 +243,7 @@ export default function PodcastPreview({ handleOpenCard, session }) {
 
       <Container sx={{ mt: "4rem" }}>
         <>
-       <h1 className="text">What you can get for now.....</h1>
+       <h1 className="text">What awaits for you in the God's App.....</h1>
         <Carousel handleClick={handleOpenCard} podcastShows={shuffledPodcasts}/> 
           <div className="filters">
             <Search
@@ -258,7 +258,7 @@ export default function PodcastPreview({ handleOpenCard, session }) {
           </div>
 
           
-    <h1 className="text" style={{marginRight: '2rem'}}>Discover more shows😁</h1>
+    <h1 className="text" style={{marginRight: '2rem'}}>Discover More Godly shows</h1>
           <div className="shows-list">
             
             {cards}</div>
