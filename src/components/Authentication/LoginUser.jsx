@@ -34,10 +34,9 @@ export default function LoginUser({ setSession }) {
   async function handleSubmit(event) {
     event.preventDefault();
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email: formData.email,
-        password: formData.password,
-      });
+      console.log("Email:", formData.email);
+      console.log("Password:", formData.password);
+      
       navigate("/");
       setSession(data);
 
