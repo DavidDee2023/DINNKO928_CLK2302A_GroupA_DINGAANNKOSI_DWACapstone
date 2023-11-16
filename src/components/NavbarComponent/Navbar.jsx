@@ -47,26 +47,27 @@ export default function Navbar({ handleFavNavigation, handleLoginNavigation }) {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
         className="navbar"
+        color="secondary"
         position="fixed"
-        sx={{ height: "6rem", width: "100%" }}
+        sx={{ height: "7rem", width: "100%" }}
       >
         <div className="nav--container">
           <div className="title--image">
             <Link to="/">
-              <img src={SoundLogo} className="podcast--logo" />
+              <img src={SoundLogo} className="Godcast--logo" />
             </Link>
-            <p>GodCast App</p>
+            <h2>GodCast App</h2>
           </div>
           {!isMatch && (
             <Tabs
               className="tabs"
-              textColor="secondary"
+              textColor="primary"
               value={tabValue}
               onChange={handleChange}
               sx={{
                 "& button": { borderRadius: 2 },
-                "& button:hover": { backgroundColor: "brown" },
-                "& button:focus": { backgroundColor: "Beige" },
+                "& button:hover": { backgroundColor: "red" },
+                "& button:focus": { backgroundColor: "black" },
                 ml: "15rem",
               }}
             >

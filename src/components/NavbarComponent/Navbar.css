@@ -5,10 +5,10 @@
     background-color: black;
 }
 
-.podcast--logo {
-    width: 60px;
-    height: 40px;
-    padding-right:1rem ;
+.Godcast--logo {
+    width: 90px;
+    height: 70px;
+    padding-right:2rem ;
 }
 .title--image {
     display: flex;
@@ -17,7 +17,7 @@
 }
 .title--image > p {
     
-   font-size: 1rem;
+   font-size: 2rem;
 }
 .nav--container {
     display: flex;

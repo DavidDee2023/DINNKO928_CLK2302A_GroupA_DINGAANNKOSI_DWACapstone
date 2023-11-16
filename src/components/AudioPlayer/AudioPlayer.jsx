@@ -228,9 +228,9 @@ export default function AudioPlayer() {
     <div className={closePlayer ? "audio--player-close" :"audio--player"}>
       <div >
         <div className="close--reset">
-          {/* <IconButton sx={{ fontSize: "0.5rem", color: "white" }}>
+          { <IconButton sx={{ fontSize: "0.5rem", color: "white" }}>
             <CloseIcon />
-          </IconButton> */}
+          </IconButton> }
           <i className="uil uil-times close--button" onClick={handleCloseAudioPlayer} ></i>
           <button className="reset" onClick={() => resetProgress()}>
             Reset

@@ -12,7 +12,7 @@ export default function GoBack({onGoBack}) {
         <Button 
         variant="contained" 
         size="large" 
-        color="secondary" 
+        color="primary" 
         startIcon={<ArrowBackIosOutlinedIcon/>} 
         onClick={onGoBack}
         sx={{mt:'6rem'}}
