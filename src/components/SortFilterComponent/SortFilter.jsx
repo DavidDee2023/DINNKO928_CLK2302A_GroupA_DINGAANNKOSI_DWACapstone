@@ -11,7 +11,7 @@ export default function SortFilter({ sortPodcast}) {
             
         <ButtonGroup 
         size="small" 
-        color="primary" 
+        color="secondary" 
         variant="outlined" 
         aria-label="outlined button group"
         sx={{ width: '18rem'}}
