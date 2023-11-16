@@ -31,7 +31,7 @@ export default function Search({ podcastShows, setSearchResults }) {
   return (
     <>
       <form className="filter--search">
-        <label>Search</label>
+        <label placeholder="God-searching">Search</label>
         <input
           type="text"
           value={query}

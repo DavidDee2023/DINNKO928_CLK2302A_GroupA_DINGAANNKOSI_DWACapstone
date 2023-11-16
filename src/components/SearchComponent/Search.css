@@ -8,8 +8,11 @@
     margin-right: 0.5rem;;
 }
 .filter--search input{
-background-color: transparent;
+background-color: beige;
+text-decoration-color: black;
 border: 1px solid #ab7b00;
+border-radius: 30px 30px 30px 30px;
+
 height: 2rem
 }
 
