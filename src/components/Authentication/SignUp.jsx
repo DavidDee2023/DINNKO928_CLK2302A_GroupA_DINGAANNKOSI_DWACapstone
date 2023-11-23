@@ -50,8 +50,8 @@ export default function SignUp() {
     <>
       <div className="auth--form">
         <div className="form--info">
-          <p className="podcast--title">GOD CAST APP</p>
-          <p className="text">Godly sign up?</p>
+          <p className="podcast--title">God Cast App</p>
+          <p className="text">Want to Sign Up?</p>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="inputBox">
@@ -59,11 +59,11 @@ export default function SignUp() {
             <span>Full Name</span>
           </div>
           <div className="inputBox">
-            <input name="email" autoComplete="email" onChange={handleChange} />
+            <input name="email" onChange={handleChange} />
             <span>Email</span>
           </div>
           <div className="inputBox">
-            <input type="password" name="password" autoComplete="password" onChange={handleChange} />
+            <input type="password" name="password" onChange={handleChange} />
             <span>Password</span>
           </div>
 

@@ -11,11 +11,14 @@ export default function LoginUser({ setSession }) {
     password: "",
   });
   const navigate = useNavigate();
+  
 
   /**
    * function that sets state variables for input fields
    * @param {Object} event 
    */
+
+  //this is what will run when the submit button is clicked
   const handleChange = (event) => {
     setFormData((prevFormData) => {
       return {
@@ -25,26 +28,30 @@ export default function LoginUser({ setSession }) {
     });
   };
 
-  /**
-   * Function that handles the submission of form. Using the supabase method
-   * to sign exisiting users. Once authenticated the page will be redirected to the
-   * podcast previews page
-   * @param {Object} event 
-   */
-  async function handleSubmit(event) {
-    event.preventDefault();
-    try {
-      console.log("Email:", formData.email);
-      console.log("Password:", formData.password);
-      
-      navigate("/");
-      setSession(data);
+/**
+ * Function that handles the submission of form. Using the supabase method
+ * to sign exisiting users. Once authenticated the page will be redirected to the
+ * podcast previews page
+ * @param {Object} event 
+*/
+ 
 
-      if (error) throw error;
-    } catch (error) {
-      alert(error);
-    }
-  }
+    async function handleSubmit(event) {
+      event.preventDefault();
+      try {
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email: formData.email,
+          password: formData.password,
+        });
+        navigate("/");
+        setSession(data);
+
+        if (error) throw error;
+      } catch (error) {
+        alert(error);
+      }
+    };
+  
 
   return (
     <>
@@ -55,19 +62,19 @@ export default function LoginUser({ setSession }) {
         </div>
         <form onSubmit={handleSubmit}>
           <div className="inputBox">
-            <input name="email" placeholder="email" autoComplete="email" onChange={handleChange} />
+            <input name="email" onChange={handleChange} />
             <span>Email</span>
           </div>
           <div className="inputBox">
-            <input type="password" name="password" placeholder="password" autoComplete="password" onChange={handleChange} />
+            <input type="password" name="password" onChange={handleChange} />
             <span>Password</span>
           </div>
+
           <button className="submit--button" type="submit">
             Submit
           </button>
-        </form>
-
-        
+       </form>
+ 
         <p>
           Do not have an account?{" "}
           <Link to="/signup">

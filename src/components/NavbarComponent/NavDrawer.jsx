@@ -6,6 +6,8 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import PersonIcon from "@mui/icons-material/Person";
 import HomeIcon from "@mui/icons-material/Home";
 
+// ... (your other imports)
+
 export default function NavDrawer(props) {
   // eslint-disable-next-line react/prop-types
   const { openDrawer, setOpenDrawer } = props;
@@ -28,7 +30,7 @@ export default function NavDrawer(props) {
       anchor="right"
     >
       <List sx={{ color: "white" }}>
-        <ListItem>
+        <ListItem style={{ color: "white" }}>
           <ListItemIcon>
             <HomeIcon sx={{ color: "white" }} />
           </ListItemIcon>
@@ -38,7 +40,7 @@ export default function NavDrawer(props) {
             primary="Home"
           />
         </ListItem>
-        <ListItem>
+        <ListItem style={{ color: "white" }}>
           <ListItemIcon >
             <FavoriteIcon sx={{ color: "white" }}/>
           </ListItemIcon>
@@ -48,7 +50,7 @@ export default function NavDrawer(props) {
             primary="Favourites"
           />
         </ListItem>
-        <ListItem>
+        <ListItem style={{ color: "white" }}>
           <ListItemIcon>
             <PersonIcon sx={{ color: "white" }} />
           </ListItemIcon>

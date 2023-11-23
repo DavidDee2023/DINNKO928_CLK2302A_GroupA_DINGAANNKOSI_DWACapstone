@@ -46,6 +46,8 @@ export default function AudioPlayer() {
     }
   }, [currentEpisode]);
 
+  
+
   useEffect(() => {
     // Retrieve episode progress from local storage
     const lastPlayedProgress = JSON.parse(
@@ -283,4 +285,4 @@ export default function AudioPlayer() {
       </div>
     </div>
   );
-}m
+}

@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Navbar from "./components/NavbarComponent/Navbar";
+ import Navbar from "./components/NavbarComponent/Navbar";
 import PodcastPreview from "./Pages/PodcastPreview/PodcastPreview";
-import Favourites from "./Pages/Favourites/Favourites";
+ import Favourites from "./Pages/Favourites/Favourites";
 import { SignUp, LoginUser } from "./components/Authentication";
 import { getSavedLastPlayedEpisode } from "./utils/localStorage";
-import SinglePodcastDetails from "./components/SinglePodcastDetails/SinglePodcastDetails";
-import AudioPlayer from './components/AudioPlayer/AudioPlayer'
-import { useDispatch } from "react-redux";
-import { selectedEpisode } from "./features/AudioPlayer/playerSlice";
+ import SinglePodcastDetails from "./components/SinglePodcastDetails/SinglePodcastDetails";
+  import AudioPlayer from './components/AudioPlayer/AudioPlayer'
+ import { useDispatch } from "react-redux";
+ import { selectedEpisode } from "./features/AudioPlayer/playerSlice";
 import { supabase } from "./supabaseClient";
 
 function App() {
@@ -246,5 +246,3 @@ function App() {
 }
 
 export default App;
-
-

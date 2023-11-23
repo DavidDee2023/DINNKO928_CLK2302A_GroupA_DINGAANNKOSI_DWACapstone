@@ -31,7 +31,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background: rgb(118, 117, 117);
+    background-color: rgb(238, 255, 218);
     column-gap: 1.5rem;
     row-gap: 1rem;
     width: 100%;
