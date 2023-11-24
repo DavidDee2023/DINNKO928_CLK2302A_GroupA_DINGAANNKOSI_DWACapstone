@@ -106,11 +106,15 @@ function App() {
       const favouriteEpisode = {
         favourite_id: favouriteEpisodeId,
         id: session.user.id,
-        date_added: new Date(),
+        
         
       }
-      const {data, error} = await supabase
-      .from('favourites')
+      
+      let { data: favourite_id, error } = await supabase
+      .from('favourite_id')
+      .select('some_column,other_column')
+
+
       .insert([favouriteEpisode])
       if (error){
         alert('error saving episode to favourites.' ,error)
