@@ -54,7 +54,7 @@ export default function Favourites({
         
         try {
           const response = await fetch(
-            `https://podcast-api.netlify.app/id/${podcastId}`
+            `https://god-cast-app.netlify.app/favourite_id/${favourite_id}`
           );
           const data = await response.json();
           const seasonData = data.seasons.find(
