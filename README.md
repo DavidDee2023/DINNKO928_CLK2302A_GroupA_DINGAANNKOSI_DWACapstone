@@ -1,7 +1,7 @@
-God-Cast-App Project
+God-Cast-App Project 🎧
 
-🎧🎶🎧🎶
-For our final Capstone project from the Dynamic Web Apps Module we were required to build a user-friendly and engaging podcast app that allowed users to explore an extensive collection of podcast shows, seamlessly play their favorite episodes, and to keep track of the ones they love the most. 
+🎧
+The final Capstone project from the Dynamic Web Apps Module we were required to build a user-friendly and engaging podcast app that allowed users to explore an extensive collection of podcast shows, seamlessly play their favorite episodes, and to keep track of the ones they love the most. 
 
 
   - [Features](#features)
@@ -9,7 +9,7 @@ For our final Capstone project from the Dynamic Web Apps Module we were required
   - [Installation](#installation)
   - [Technologies Used](#technologies-used)
 
- ## 🎵Features
+ ## Features
 
 - 🎧Simple and user Friendly
 - 🎧Ability to listen episodes
@@ -18,11 +18,11 @@ For our final Capstone project from the Dynamic Web Apps Module we were required
 - 🎧Smart search and filtering
 - 🎧Responsive design
 
-
-  http://localhost:5173
+  Netlify deployment
+ https://god-cast-app.netlify.app/
   ```
 
-## 🎵Technologies Used
+## Technologies Used
 
 - HTML
 - CSS
